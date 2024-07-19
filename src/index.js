@@ -4,11 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { FormTable } from "./components/form-table";
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
-    element: <h1>Hello</h1>,
+    path: "/formTable",
+    element: <FormTable />,
   },
   {
     path: "/",
