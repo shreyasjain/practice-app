@@ -1,26 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { FormTable } from "./components/form-table";
-import { Provider } from "react-redux";
+import Layout from "./components/layout";
 
 const router = createBrowserRouter([
   {
     path: "/formTable",
     element: <FormTable />,
   },
-  {
-    path: "/",
-    element: <App />,
-  },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Layout>
+      {/* <Provider store={{}}> */}
+        <RouterProvider router={router} />
+      {/* </Provider> */}
+    </Layout>
   </React.StrictMode>
 );
 

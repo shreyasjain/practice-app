@@ -1,10 +1,6 @@
 import React from "react";
-import Layout from "../layout";
+import QueryForm from "./QueryForm";
 
 export const FormTable = () => {
-  return (
-    <Layout>
-      <div>FormTable</div>
-    </Layout>
-  );
+  return <QueryForm />;
 };
