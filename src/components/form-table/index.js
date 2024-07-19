@@ -1,5 +1,10 @@
 import React from "react";
+import Layout from "../layout";
 
 export const FormTable = () => {
-  return <div>FormTable</div>;
+  return (
+    <Layout>
+      <div>FormTable</div>
+    </Layout>
+  );
 };

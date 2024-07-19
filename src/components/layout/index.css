@@ -1,0 +1,12 @@
+.layout-style {
+  display: flex;
+  justify-content: center;
+}
+
+.children-container {
+  width: 50%;
+  background-color: rgb(229, 255, 233);
+  display: flex;
+  justify-content: center;
+  border: 1px dashed black;
+}
