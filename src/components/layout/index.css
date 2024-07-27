@@ -5,9 +5,10 @@
 
 .children-container {
   width: 50%;
-  background-color: rgb(229, 255, 233);
   display: flex;
-  justify-content: center;
+  align-items: center;
   border: 1px dashed black;
   padding: 20px;
+  flex-direction: column;
+  border-top: 5px solid cyan;
 }
